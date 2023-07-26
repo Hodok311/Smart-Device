@@ -36,6 +36,14 @@
   }
 }
 
+@mixin fonts($font-size, $line-height) {
+  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 // Desktop first
 
 @mixin vp-1919 {
@@ -56,7 +64,7 @@
   }
 }
 
-@mixin vp-1023 {
+@mixin vp-1024 {
   @media (max-width: ($vp-1024 - 1px)) {
     @content;
   }
