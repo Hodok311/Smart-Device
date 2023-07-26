@@ -1,0 +1,201 @@
+.main-page {
+  width: 100%;
+  min-height: 880px;
+  background-color: #1f5a72;
+  background-image: linear-gradient(#04182780),
+    url("../img/main-page-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 305px;
+  padding-bottom: 20px;
+
+  @media (min-resolution: 1dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(25, 32, 36, 0.7) 71.72%,
+        rgba(25, 32, 36, 0) 100%
+      ),
+      url("../img/main-page-desktop.webp");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(25, 32, 36, 0.7) 71.72%,
+        rgba(25, 32, 36, 0) 100%
+      ),
+      url("../img/main-page-desktop@2x.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(25, 32, 36, 0.7) 71.72%,
+        rgba(25, 32, 36, 0) 100%
+      ),
+      url("../img/main-page-desktop@2x.webp");
+  }
+
+  @media (max-width: $vp-1024) {
+    background-image: linear-gradient(#04182780),
+      url("../img/main-page-tablet.jpg");
+    min-height: 555px;
+    margin-top: -15px;
+    padding: 94px 50px 0;
+
+    @media (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(25, 32, 36, 0.7) 71.72%,
+          rgba(25, 32, 36, 0) 100%
+        ),
+        url("../img/main-page-tablet.webp");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(25, 32, 36, 0.7) 71.72%,
+          rgba(25, 32, 36, 0) 100%
+        ),
+        url("../img/main-page-tablet@2x.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(25, 32, 36, 0.7) 71.72%,
+          rgba(25, 32, 36, 0) 100%
+        ),
+        url("../img/main-page-tablet@2x.webp");
+    }
+  }
+
+  @media (max-width: $vp-768) {
+    background-image: linear-gradient(#04182780),
+      url("../img/main-page-mobile.jpg");
+    min-height: 494px;
+    padding: 0 25px;
+    padding-top: 86px;
+
+    @media (min-resolution: 1dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(25, 32, 36, 0.7) 71.72%,
+          rgba(25, 32, 36, 0) 100%
+        ),
+        url("../img/main-page-mobile.webp");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(25, 32, 36, 0.7) 71.72%,
+          rgba(25, 32, 36, 0) 100%
+        ),
+        url("../img/main-page-mobile@2x.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(25, 32, 36, 0.7) 71.72%,
+          rgba(25, 32, 36, 0) 100%
+        ),
+        url("../img/main-page-mobile@2x.webp");
+    }
+  }
+}
+
+.main-page__wrapper {
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+.main-page__title {
+  @include fonts(80px, 94px);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  margin: 0;
+
+  @media (max-width: $vp-1024) {
+    @include fonts(64px, 75px);
+  }
+
+  @media (max-width: $vp-768) {
+    @include fonts(36px, 42px);
+  }
+}
+
+.main-page__text {
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f7;
+  max-width: 620px;
+  margin: 37px 0;
+
+  @media (max-width: $vp-1024) {
+    margin: 0 0 60px;
+  }
+
+  @media (max-width: $vp-768) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 5px;
+    margin-bottom: 48px;
+  }
+}
+
+.main-page__button {
+  @include fonts(18px, 21px);
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  display: block;
+  background: #00b2ff;
+  border-radius: 3px;
+  padding: 15px 25px;
+  margin-top: 45px;
+  width: 410px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #28bcfc;
+  }
+
+  &:active {
+    background: #39afe2;
+  }
+
+  @media (max-width: $vp-1024) {
+    margin-left: 44px;
+  }
+
+  @media (max-width: $vp-768) {
+    @include fonts(14px, 16px);
+    margin-left: 0;
+    margin-top: 24px;
+    width: 100%;
+    padding: 10px 30px;
+  }
+}
+
+.main-page__button-text-deskstop {
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.main-page__button-text-mobile {
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: block;
+  }
+}
