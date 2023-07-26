@@ -1,210 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Smart Devise</title>
-    <link rel="preload" href="css/style.min.css" as="style">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  </head>
-  <body>
-    <header class="header">
-      <ul class="header_list">
-        <li class="header_item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg" width="215" height="55">
-            <img src="img/svg/logo-mobile.svg" alt="Логотип Smart Devise" width="35" height="35">
-          </picture>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Smart Devise</title>
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <ul class="header_list">
+      <li class="header_item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg" width="215" height="55">
+          <img src="img/svg/logo-mobile.svg" alt="Логотип Smart Devise" width="35" height="35">
+        </picture>
+      </li>
+      <li class="header_item header_item--grid">
+        <a class="header_link" href="mailto:info@sd.ru">
+          <svg class="header_link-icon" width="20" height="20" xmln="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
+            <use href="img/sprite/sprite.svg#email"></use>
+          </svg>
+          <span class="header_link-text">info@sd.ru</span>
+        </a>
+        <a class="header_link" href="tel:+7 (495) 000 52 52">
+          <span class="visually-hidden">номер телефона</span>
+          <svg class="header_link-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+            <use href="img/sprite/sprite.svg#phone"></use>
+          </svg>
+          <span class="header_link-text">+7 495 000 52 52</span>
+        </a>
+      </li>
+      <li class="header_item header_item-hidden">
+        <button class="header_button" type="button" data-open-modal="feedback">
+          Заказать звонок
+        </button>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <section class="main-page">
+      <div class="main-page_wrapper">
+        <h1 class="main-page_title">Печатные платы</h1>
+        <p class="main-page_text">
+          производство и монтаж, поставка комплектующих, блоков и модулей
+        </p>
+        <a class="main-page_button" href="#">
+          <span class="main-page_button-text-deskstop">
+            Получить бесплатную консультацию
+          </span>
+          <span class="main-page_button-text-mobile">
+            бесплатная консультация
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="benefits">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <svg class="benefits__icon" width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+            <use href="img/sprite/sprite.svg#stopwatch"></use>
+          </svg>
+          <h3 class="benefits_title">Оперативные сроки</h3>
+          <p class="benefits__text">
+            усовершенствованная логическая система позволяет нам просчитывать стоимость, производить доставлять заказы плат и комплектующих в самые короткие сроки
+          </p>
         </li>
-        <li class="header_item header_item--grid">
-          <a class="header_link" href="mailto:info@sd.ru">
-            <svg class="header_link-icon" width="20" height="20" xmln="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
-              <use href="img/sprite/sprite.svg#email"></use>
-            </svg>
-            <span class="header_link-text">info@sd.ru</span>
-          </a>
-          <a class="header_link" href="tel:+7 (495) 000 52 52">
-            <span class="visually-hidden">номер телефона</span>
-            <svg class="header_link-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-              <use href="img/sprite/sprite.svg#phone"></use>
-            </svg>
-            <span class="header_link-text">+7 495 000 52 52</span>
-          </a>
-        </li>
-        <li class="header_item header_item-hidden">
-          <button class="header_button" type="button" data-open-modal="feedback">
-            Заказать звонок
-          </button>
+        <li class="benefits__item">
+          <svg class="benefists__icon" width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
+            <use href="img/sprite/sprite.svg#hired"></use>
+          </svg>
+          <h3 class="benefits__title">Крупные поставщики</h3>
+          <p class="benefits__text">
+            Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, FEROND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции
+          </p>
         </li>
       </ul>
-    </header>
-    <main>
-      <section class="main-page">
-        <div class="main-page_wrapper">
-          <h1 class="main-page_title">Печатные платы</h1>
-          <p class="main-page_text">
-            производство и монтаж, поставка комплектующих, блоков и модулей
-          </p>
-          <a class="main-page_button" href="#">
-            <span class="main-page_button-text-deskstop">
-              Получить бесплатную консультацию
-            </span>
-            <span class="main-page_button-text-mobile">
-              бесплатная консультация
-            </span>
-          </a>
-        </div><!DOCTYPE html>
-        <html lang="ru">
-          <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <meta name="description" content="Описание проекта">
-            <title>Smart Devise</title>
-            <link rel="preload" href="css/style.min.css" as="style">
-            <link rel="stylesheet" href="css/style.min.css">
-            <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-            <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-          </head>
-          <body>
-            <header class="header">
-              <ul class="header_list">
-                <li class="header_item">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg" width="215" height="55">
-                    <img src="img/svg/logo-mobile.svg" alt="Логотип Smart Devise" width="35" height="35">
-                  </picture>
-                </li>
-                <li class="header_item header_item--grid">
-                  <a class="header_link" href="mailto:info@sd.ru">
-                    <svg class="header_link-icon" width="20" height="20" xmln="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
-                      <use href="img/sprite/sprite.svg#email"></use>
-                    </svg>
-                    <span class="header_link-text">info@sd.ru</span>
-                  </a>
-                  <a class="header_link" href="tel:+7 (495) 000 52 52">
-                    <span class="visually-hidden">номер телефона</span>
-                    <svg class="header_link-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-                      <use href="img/sprite/sprite.svg#phone"></use>
-                    </svg>
-                    <span class="header_link-text">+7 495 000 52 52</span>
-                  </a>
-                </li>
-                <li class="header_item header_item-hidden">
-                  <button class="header_button" type="button" data-open-modal="feedback">
-                    Заказать звонок
-                  </button>
-                </li>
-              </ul>
-            </header>
-            <main>
-              <section class="main-page">
-                <div class="main-page_wrapper">
-                  <h1 class="main-page_title">Печатные платы</h1>
-                  <p class="main-page_text">
-                    производство и монтаж, поставка комплектующих, блоков и модулей
-                  </p>
-                  <a class="main-page_button" href="#">
-                    <span class="main-page_button-text-deskstop">
-                      Получить бесплатную консультацию
-                    </span>
-                    <span class="main-page_button-text-mobile">
-                      бесплатная консультация
-                    </span>
-                  </a>
-                </div>
-              </section>
-              <section class=""></section>
-            </main>
+    </section>
+  </main>
 
-        <!-- Footer -->
-            <footer class="footer">
-              <div class="footer_wrapper">
-                <div class="footer_logo-wrapper">
-                  <img class="footer_logo" src="img/svg/logo-desktop.svg" alt="Логотип Смарт Девайс" width="215" height="55">
-                  <ul class="footer_social-list">
-                    <li class="footer_social-item">
-                      <a class="footer_social-link" href="#">
-                        <span class="visually-hidden"> одноклассники</span>
-                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" wiewBox="0 0 40 40">
-                          <use href="img/sprite/sprite/sprite.svg#odnoklassniki"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="footer_social-item">
-                      <a class="footer_social-link" href="#">
-                        <span class="visually-hidden">вконтакте</span>
-                        <svg class="footer_social-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg" wiewBox="0 0 40 40">
-                          <use href="img/sprite/sprite.svg#vk"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="footer_social-item">
-                      <a class="footer_social-link" href="#">
-                        <span class="visually-hidden">пинтерест</span>
-                        <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-                          <use href="img/sprite/sprite.svg#pinterest"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer_nav">
-                  <div class="footer_nav-wrapper">
-                    <button class="footer_nav-title" tabindex="-1">Разделы сайта</button>
-                    <span class="footer_nav-element"></span>
-                    <ul slass="footer_nav-list footer_nav-list--columns">
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">О Компании</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">Продукты</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">Производство печатных плат</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">Монтаж печатных плат</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">Комплектующие</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">Доставка</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="#">Контакты</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="footer_nav-wrapper">
-                    <button class="footer_nav-title" tabindex="-1">Наш офис</button>
-                    <span class="footer_nav-element"></span>
-                    <ul class="footer_nav-list footer_nav-list--row">
-                      <li class="footer_nav-item">
-                        <address class="footer_nav-link footer_nav-link--address">
-                          г.Мытищи, Олимпийский проспект, д. 10
-                        </address>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="tel: +7 (495) 589-40-50">+7 (495) 589-40-50</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-link" href="tel: +7 (925) 389-58-29">+7 (925) 389-58-29</a>
-                      </li>
-                      <li class="footer_nav-item">
-                        <a class="footer_nav-item" href="tel: +7 (925) 364-78-13">+7 (935) 364-78-13</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </footer>
-            <script src="js/vendor.min.js"></script>
-            <script src="js/main.min.js"></script>
-          </body>
-        </html>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer_wrapper">
+      <div class="footer_logo-wrapper">
+        <img class="footer_logo" src="img/svg/logo-desktop.svg" alt="Логотип Смарт Девайс" width="215" height="55">
+        <ul class="footer_social-list">
+          <li class="footer_social-item">
+            <a class="footer_social-link" href="#">
+              <span class="visually-hidden"> одноклассники</span>
+              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" wiewBox="0 0 40 40">
+                <use href="img/sprite/sprite/sprite.svg#odnoklassniki"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer_social-item">
+            <a class="footer_social-link" href="#">
+              <span class="visually-hidden">вконтакте</span>
+              <svg class="footer_social-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg"
+                wiewBox="0 0 40 40">
+                <use href="img/sprite/sprite.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer_social-item">
+            <a class="footer_social-link" href="#">
+              <span class="visually-hidden">пинтерест</span>
+              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+                <use href="img/sprite/sprite.svg#pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_nav">
+        <div class="footer_nav-wrapper">
+          <button class="footer_nav-title" tabindex="-1">Разделы сайта</button>
+          <span class="footer_nav-element"></span>
+          <ul slass="footer_nav-list footer_nav-list--columns">
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">О Компании</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">Продукты</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">Производство печатных плат</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">Монтаж печатных плат</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">Комплектующие</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">Доставка</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_nav-wrapper">
+          <button class="footer_nav-title" tabindex="-1">Наш офис</button>
+          <span class="footer_nav-element"></span>
+          <ul class="footer_nav-list footer_nav-list--row">
+            <li class="footer_nav-item">
+              <address class="footer_nav-link footer_nav-link--address">
+                г.Мытищи, Олимпийский проспект, д. 10
+              </address>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="tel: +7 (495) 589-40-50">+7 (495) 589-40-50</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-link" href="tel: +7 (925) 389-58-29">+7 (925) 389-58-29</a>
+            </li>
+            <li class="footer_nav-item">
+              <a class="footer_nav-item" href="tel: +7 (925) 364-78-13">+7 (935) 364-78-13</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
