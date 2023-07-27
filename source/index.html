@@ -8,37 +8,37 @@
   <meta name="description" content="Описание проекта">
   <title>Smart Devise</title>
   <link rel="preload" href="../build/css/style.min.css" as="style">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="../build/css/style.min.css">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <header class="header">
-    <ul class="header_list">
-      <li class="header_item">
+    <ul class="header__list">
+      <li class="header__item">
         <picture>
           <source media="(min-width: 768px)" srcset="img/svg/logo-desktop.svg" width="215" height="55">
           <img src="img/svg/logo-mobile.svg" alt="Логотип Smart Devise" width="35" height="35">
         </picture>
       </li>
-      <li class="header_item header_item--grid">
-        <a class="header_link" href="mailto:info@sd.ru">
-          <svg class="header_link-icon" width="20" height="20" xmln="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
+      <li class="header__item header__item--grid">
+        <a class="header__link" href="mailto:info@sd.ru">
+          <svg class="header__link-icon" width="20" height="20" xmln="http://www.w3.org/2000/svg" viewBox="0 0 22 20">
             <use href="img/sprite/sprite.svg#email"></use>
           </svg>
-          <span class="header_link-text">info@sd.ru</span>
+          <span class="header__link-text">info@sd.ru</span>
         </a>
-        <a class="header_link" href="tel:+7 (495) 000 52 52">
+        <a class="header__link" href="tel:+7 (495) 000 52 52">
           <span class="visually-hidden">номер телефона</span>
-          <svg class="header_link-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+          <svg class="header__link-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
             <use href="img/sprite/sprite.svg#phone"></use>
           </svg>
-          <span class="header_link-text">+7 495 000 52 52</span>
+          <span class="header__link-text">+7 495 000 52 52</span>
         </a>
       </li>
-      <li class="header_item header_item-hidden">
-        <button class="header_button" type="button" data-open-modal="feedback">
+      <li class="header__item header__item-hidden">
+        <button class="header__button" type="button" data-open-modal="feedback">
           Заказать звонок
         </button>
       </li>
@@ -46,16 +46,16 @@
   </header>
   <main>
     <section class="main-page">
-      <div class="main-page_wrapper">
-        <h1 class="main-page_title">Печатные платы</h1>
-        <p class="main-page_text">
+      <div class="main-page__wrapper">
+        <h1 class="main-page__title">Печатные платы</h1>
+        <p class="main-page__text">
           производство и монтаж, поставка комплектующих, блоков и модулей
         </p>
-        <a class="main-page_button" href="#">
-          <span class="main-page_button-text-deskstop">
+        <a class="main-page__button" href="#">
+          <span class="main-page__button-text-deskstop">
             Получить бесплатную консультацию
           </span>
-          <span class="main-page_button-text-mobile">
+          <span class="main-page__button-text-mobile">
             бесплатная консультация
           </span>
         </a>
@@ -68,7 +68,7 @@
           <svg class="benefits__icon" width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35">
             <use href="img/sprite/sprite.svg#stopwatch"></use>
           </svg>
-          <h3 class="benefits_title">Оперативные сроки</h3>
+          <h3 class="benefits__title">Оперативные сроки</h3>
           <p class="benefits__text">
             усовершенствованная логическая система позволяет нам просчитывать стоимость, производить доставлять заказы
             плат и комплектующих в самые короткие сроки
@@ -158,7 +158,7 @@
           </li>
           <li class="services_item services_item--accessories">
             <a class="services__link" href="#">
-              <h3 class="services_item-title">
+              <h3 class="services__item-title">
                 Комплектующие для светотехники
               </h3>
               <div class="services__item-element"></div>
@@ -172,7 +172,7 @@
       <div class="form__inner-wrapper">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/svg/paper_airplane.svg">
-          <img class="form_image" src="img/svg/paper_airplane.svg" alt="Бумажный самолетик" width="510" height="285">
+          <img class="form__image" src="img/svg/paper_airplane.svg" alt="Бумажный самолетик" width="510" height="285">
         </picture>
         <div class="form__wrapper">
           <h3 class="form__title">Остались вопросы? Задайте их нам!</h3>
@@ -212,29 +212,29 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer_wrapper">
-      <div class="footer_logo-wrapper">
-        <img class="footer_logo" src="img/svg/logo-desktop.svg" alt="Логотип Смарт Девайс" width="215" height="55">
-        <ul class="footer_social-list">
-          <li class="footer_social-item">
-            <a class="footer_social-link" href="#">
+    <div class="footer__wrapper">
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo" src="img/svg/logo-desktop.svg" alt="Логотип Смарт Девайс" width="215" height="55">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden"> одноклассники</span>
               <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" wiewBox="0 0 40 40">
                 <use href="img/sprite/sprite.svg#odnoklassniki"></use>
               </svg>
             </a>
           </li>
-          <li class="footer_social-item">
-            <a class="footer_social-link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">вконтакте</span>
-              <svg class="footer_social-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg"
+              <svg class="footer__social-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg"
                 wiewBox="0 0 40 40">
                 <use href="img/sprite/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
-          <li class="footer_social-item">
-            <a class="footer_social-link" href="#">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#">
               <span class="visually-hidden">пинтерест</span>
               <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
                 <use href="img/sprite/sprite.svg#pinterest"></use>
@@ -243,51 +243,51 @@
           </li>
         </ul>
       </div>
-      <div class="footer_nav">
-        <div class="footer_nav-wrapper">
-          <button class="footer_nav-title" tabindex="-1">Разделы сайта</button>
-          <span class="footer_nav-element"></span>
-          <ul slass="footer_nav-list footer_nav-list--columns">
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">О Компании</a>
+      <div class="footer__nav">
+        <div class="footer__nav-wrapper">
+          <button class="footer__nav-title" tabindex="-1">Разделы сайта</button>
+          <span class="footer__nav-element"></span>
+          <ul slass="footer__nav-list footer__nav-list--columns">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">О Компании</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">Продукты</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Продукты</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">Производство печатных плат</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Производство печатных плат</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">Монтаж печатных плат</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Монтаж печатных плат</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">Комплектующие</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Комплектующие</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">Доставка</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Доставка</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="#">Контакты</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">Контакты</a>
             </li>
           </ul>
         </div>
-        <div class="footer_nav-wrapper">
-          <button class="footer_nav-title" tabindex="-1">Наш офис</button>
-          <span class="footer_nav-element"></span>
-          <ul class="footer_nav-list footer_nav-list--row">
-            <li class="footer_nav-item">
-              <address class="footer_nav-link footer_nav-link--address">
+        <div class="footer__nav-wrapper">
+          <button class="footer__nav-title" tabindex="-1">Наш офис</button>
+          <span class="footer__nav-element"></span>
+          <ul class="footer__nav-list footer__nav-list--row">
+            <li class="footer__nav-item">
+              <address class="footer__nav-link footer__nav-link--address">
                 г.Мытищи, Олимпийский проспект, д. 10
               </address>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="tel: +7 (495) 589-40-50">+7 (495) 589-40-50</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="tel: +7 (495) 589-40-50">+7 (495) 589-40-50</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-link" href="tel: +7 (925) 389-58-29">+7 (925) 389-58-29</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="tel: +7 (925) 389-58-29">+7 (925) 389-58-29</a>
             </li>
-            <li class="footer_nav-item">
-              <a class="footer_nav-item" href="tel: +7 (925) 364-78-13">+7 (935) 364-78-13</a>
+            <li class="footer__nav-item">
+              <a class="footer__nav-item" href="tel: +7 (925) 364-78-13">+7 (935) 364-78-13</a>
             </li>
           </ul>
         </div>
