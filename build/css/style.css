@@ -1362,24 +1362,24 @@ button,
 }
 
 .services__item--production {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-1.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-1.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-1.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .services__item--installation {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-2.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-2.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .services__item--accessories {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-3.jpg");
-  background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-3.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-3.jpg");
+  background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1992,18 +1992,18 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-1.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-1.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-tablet-1.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-tablet-1.jpg");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-2.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-2.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-2.jpg");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-3.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-3.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-3.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-3.jpg");
   }
 
   .form {
@@ -2050,18 +2050,18 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-1.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-1.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-tablet-1.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-tablet-1.webp");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-2.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-2.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-2.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-2.webp");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-3.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-3.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-3.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-3.webp");
   }
 }
 
@@ -2077,33 +2077,33 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-1@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-1@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-tablet-1@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-tablet-1@2x.jpg");
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-1@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-1@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-tablet-1@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-tablet-1@2x.webp");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-2@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-2@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-2@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-2@2x.jpg");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-2@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-2@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-2@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-2@2x.webp");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-3@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-3@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-3@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-3@2x.jpg");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/service-tablet-3@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/service-tablet-3@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/service-tablet-3@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/service-tablet-3@2x.webp");
   }
 }
 
@@ -2355,18 +2355,18 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-1.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-1.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-1.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-1.jpg");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-2.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-2.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-2.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-2.jpg");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-3.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-3.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-3.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-3.jpg");
   }
 
   .services__item-title {
@@ -2433,18 +2433,18 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-1.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-1.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-1.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-1.webp");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-2.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-2.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-2.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-2.webp");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-3.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-3.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-3.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-3.webp");
   }
 }
 
@@ -2460,33 +2460,33 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-1@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-1@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-1@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-1@2x.jpg");
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-1@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-1@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-1@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-1@2x.webp");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-2@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-2@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-2@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-2@2x.jpg");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-2@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-2@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-2@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-2@2x.webp");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-3@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-3@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-3@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-3@2x.jpg");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-mobile-3@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-mobile-3@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-mobile-3@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-mobile-3@2x.webp");
   }
 }
 
@@ -2522,18 +2522,18 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-1.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-1.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-1.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-1.webp");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-2.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-2.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-2.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-2.webp");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-3.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-3.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-3.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-3.webp");
   }
 }
 
@@ -2549,32 +2549,32 @@ form button:active {
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-1@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-1@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-1@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-1@2x.jpg");
   }
 
   .services__item--production {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-1@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-1@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-1@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-1@2x.webp");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-2@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-2@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-2@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-2@2x.jpg");
   }
 
   .services__item--installation {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-2@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-2@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-2@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-2@2x.webp");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-3@2x.jpg");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-3@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-3@2x.jpg");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-3@2x.jpg");
   }
 
   .services__item--accessories {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("../img/services-desktop-3@2x.webp");
-    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("../img/services-desktop-3@2x.webp");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 24, 39, 0.5019607843))), url("/source/img/services-desktop-3@2x.webp");
+    background-image: linear-gradient(rgba(4, 24, 39, 0.5019607843)), url("/source/img/services-desktop-3@2x.webp");
   }
 }

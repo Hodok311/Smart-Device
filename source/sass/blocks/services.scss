@@ -147,189 +147,189 @@
 
 .services__item--production {
   background-image: linear-gradient(#04182780),
-    url("../img/services-desktop-1.jpg");
+    url("/source/img/services-desktop-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 1dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-1.webp");
+      url("/source/img/services-desktop-1.webp");
   }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-1@2x.jpg");
+      url("/source/img/services-desktop-1@2x.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-1@2x.webp");
+      url("/source/img/services-desktop-1@2x.webp");
   }
 
   @media (max-width: $vp-1024) {
     background-image: linear-gradient(#04182780),
-      url("../img/service-tablet-1.jpg");
+      url("/source/img/services-tablet-1.jpg");
 
     @media (min-resolution: 1dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-1.webp");
+        url("/source/img/services-tablet-1.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-1@2x.jpg");
+        url("/source/img/services-tablet-1@2x.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-1@2x.webp");
+        url("/source/img/services-tablet-1@2x.webp");
     }
   }
 
   @media (max-width: $vp-768) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-mobile-1.jpg");
+      url("/source/img/services-mobile-1.jpg");
 
     @media (min-resolution: 1dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-1.webp");
+        url("/source/img/services-mobile-1.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-1@2x.jpg");
+        url("/source/img/services-mobile-1@2x.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-1@2x.webp");
+        url("/source/img/services-mobile-1@2x.webp");
     }
   }
 }
 
 .services__item--installation {
   background-image: linear-gradient(#04182780),
-    url("../img/services-desktop-2.jpg");
+    url("/source/img/services-desktop-2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 1dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-2.webp");
+      url("/source/img/services-desktop-2.webp");
   }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-2@2x.jpg");
+      url("/source/img/services-desktop-2@2x.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-2@2x.webp");
+      url("/source/img/services-desktop-2@2x.webp");
   }
 
   @media (max-width: $vp-1024) {
     background-image: linear-gradient(#04182780),
-      url("../img/service-tablet-2.jpg");
+      url("/source/img/service-tablet-2.jpg");
 
     @media (min-resolution: 1dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-2.webp");
+        url("/source/img/service-tablet-2.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-2@2x.jpg");
+        url("/source/img/service-tablet-2@2x.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-2@2x.webp");
+        url("/source/img/service-tablet-2@2x.webp");
     }
   }
 
   @media (max-width: $vp-768) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-mobile-2.jpg");
+      url("/source/img/services-mobile-2.jpg");
 
     @media (min-resolution: 1dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-2.webp");
+        url("/source/img/services-mobile-2.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-2@2x.jpg");
+        url("/source/img/services-mobile-2@2x.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-2@2x.webp");
+        url("/source/img/services-mobile-2@2x.webp");
     }
   }
 }
 
 .services__item--accessories {
   background-image: linear-gradient(#04182780),
-    url("../img/services-desktop-3.jpg");
+    url("/source/img/services-desktop-3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 1dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-3.webp");
+      url("/source/img/services-desktop-3.webp");
   }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-3@2x.jpg");
+      url("/source/img/services-desktop-3@2x.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-desktop-3@2x.webp");
+      url("/source/img/services-desktop-3@2x.webp");
   }
 
   @media (max-width: $vp-1024) {
     background-image: linear-gradient(#04182780),
-      url("../img/service-tablet-3.jpg");
+      url("/source/img/service-tablet-3.jpg");
 
     @media (min-resolution: 1dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-3.webp");
+        url("/source/img/service-tablet-3.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-3@2x.jpg");
+        url("/source/img/service-tablet-3@2x.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/service-tablet-3@2x.webp");
+        url("/source/img/service-tablet-3@2x.webp");
     }
   }
 
   @media (max-width: $vp-768) {
     background-image: linear-gradient(#04182780),
-      url("../img/services-mobile-3.jpg");
+      url("/source/img/services-mobile-3.jpg");
 
     @media (min-resolution: 1dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-3.webp");
+        url("/source/img/services-mobile-3.webp");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-3@2x.jpg");
+        url("/source/img/services-mobile-3@2x.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(#04182780),
-        url("../img/services-mobile-3@2x.webp");
+        url("/source/img/services-mobile-3@2x.webp");
     }
   }
 }
