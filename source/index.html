@@ -294,6 +294,75 @@
       </div>
     </div>
   </footer>
+
+  <!-- модал -->
+
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content form form--modal">
+        <button
+          class="form__close-btn-modal btn-reset"
+          type="button"
+          aria-label="Закрыть попап"
+          data-close-modal
+        >
+          <svg width="20" height="20">
+            <use xlink:href="img/sprite/sprite.svg#icon-closed"></use>
+          </svg>
+        </button>
+        <div class="form__wrapper form__wrapper--modal">
+          <h3 class="form__title form__title--modal">Закажите звонок</h3>
+          <p class="form__text form__text--modal">
+            Оставьте контакты, мы проконсультируем вас бесплатно
+            в удобное время
+          </p>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <div class="form__wrapper-inner form__wrapper-inner--modal">
+              <label>
+                <span class="visually-hidden">имя</span>
+                <input name="name" type="text" placeholder="Имя" required />
+              </label>
+              <label>
+                <span class="visually-hidden">номер телефона</span>
+                <span class="form__message form__message-hidden"
+                  >Не корректный номер</span
+                >
+                <input
+                  name="tel"
+                  type="text"
+                  placeholder="Телефон"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <textarea name="Вопрос" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="form__wrapper-button form__wrapper-button--modal">
+              <button type="submit">отправить</button>
+              <label>
+                <span class="visually-hidden"
+                  >согласие на обработку персональных данных</span
+                >
+                <input
+                  class="visually-hidden"
+                  type="checkbox"
+                  checked
+                  required
+                />
+                <span class="form__control-mark"></span>
+                <span class="form__checkbox-text form__checkbox-text--modal"
+                  >Я согласен на обработку персональных данных</span
+                >
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
