@@ -167,6 +167,7 @@ export class Modals {
     setTimeout(() => {
       this._addListeners(modal);
       this._autoPlay(modal);
+      modal.querySelector('input').focus();
       document.addEventListener('click', this._documentClickHandler);
     }, this._eventTimeout);
   }
