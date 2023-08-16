@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: $color-black-pearl-overlay;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -31,17 +31,16 @@
 
   &__wrapper {
     position: relative;
-
     display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 146px 54px 44px 40px;
 
     @include vp-767 {
-      padding: 60px 16px;
+      padding: 132px 16px;
     }
   }
 
@@ -57,12 +56,13 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
     position: relative;
-
-    width: 600px;
+    width: 500px;
     padding: 40px;
-
-    background-color: $color-default-white;
+    border-radius: 3px;
+    background-color: $color-deep-sky-blue;
 
     @include vp-767 {
       width: 100%;
@@ -70,19 +70,186 @@
     }
   }
 
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      height: 100%;
+      padding: 16px;
+      margin: 0;
+      border: none;
+      border-radius: 3px;
+      background-color: $color-black-pearl-second-opacity;
+      font-family: $ff-pt-mono;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      // color: $color-alice-blue;
+      color: transparent;
+      text-shadow: 0 0 0 $color-alice-blue;
+
+
+      &:hover,
+      &:focus {
+        box-shadow: inset 0 0 0 2px $color-whisper;
+        border-radius: 3px;
+      }
+
+      &::placeholder {
+        color: $color-default-white;
+      }
+    }
+
+    textarea {
+      padding-top: 25px;
+    }
+
+    .modal__button-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
+    button {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      padding: 13px 25px;
+      background-color: $color-black-pearl;
+      color: $color-default-white;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover,
+      &:focus {
+        opacity: 0.7;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      @media (max-width: 1023px) {
+        padding-top: 15px;
+      }
+    }
+
+    .modal__checkbox-mark::before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      box-shadow: inset 0 0 0 1px $color-default-white;
+      border-radius: 2px;
+
+      @media (max-width: 767px) {
+        top: 6px;
+        left: 6px;
+      }
+    }
+
+    .input-message {
+      font-family: inherit;
+      color: $color-black-pearl;
+    }
+
+    input[type="checkbox"] {
+      cursor: pointer;
+      appearance: none;
+
+      &:checked + .modal__checkbox-mark::before {
+        background-image: url("../img/svg/checkbox-mark.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:hover + .modal__checkbox-mark::before,
+      &:focus + .modal__checkbox-mark::before {
+        box-shadow: inset 0 0 0 1px $color-black-pearl;
+      }
+    }
+  }
+
+  &__textarea {
+    height: 155px;
+  }
+
+  &__checkbox {
+    width: 100%;
+    align-self: right;
+    font-family: $ff-pt-mono;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+    opacity: 0.8;
+    padding-left: 30px;
+    padding-bottom: 3px;
+    position: relative;
+  }
+
+  &__title {
+    font-family: $ff-roboto-condensed;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    color: $color-default-white;
+    margin: 0;
+    text-align: start;
+  }
+
+  &__description {
+    font-family: $ff-pt-mono;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-default-white;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
-    z-index: 1;
-
+    top: 15px;
+    right: 15px;
     width: 40px;
     height: 40px;
     padding: 0;
-
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    svg {
+      display: block;
+      width: 20px;
+      height: 20px;
+      fill: $color-default-white;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
   }
 
   &--responsive {
@@ -113,7 +280,6 @@
     transform: scale(1);
     visibility: visible;
     opacity: 1;
-
     pointer-events: auto;
   }
 }

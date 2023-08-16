@@ -1,16 +1,11 @@
-body {
-  font-family: "PT-Mono", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-
 .wrapper {
   position: relative;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  /* stylelint-disable-next-line */
+  min-height: calc(100 * var(--vh, 1vh));
 
   .header,
   .footer {
@@ -69,4 +64,8 @@ body {
 .no-transition {
   /* stylelint-disable-next-line */
   transition: none !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
 }
