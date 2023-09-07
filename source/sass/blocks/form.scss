@@ -195,7 +195,129 @@
     border-radius: 2px;
 
     @media (max-width: 767px) {
-      top: 8px;
+      top: 8px;.form__title {
+        @include form-title;
+
+        @include vp-1023 {
+          margin-bottom: 7px;
+        }
+
+        @include vp-767 {
+          font-size: 30px;
+          line-height: 42px;
+          margin-bottom: 9px;
+        }
+      }
+
+      .form__subtitle {
+        @include form-subtitle;
+
+        @include vp-1023 {
+          margin-bottom: 25px;
+        }
+
+        @include vp-767 {
+          font-size: 14px;
+          line-height: 19px;
+          margin-bottom: 34px;
+        }
+      }
+
+      .form-wrapper form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 20px;
+
+        @include vp-767 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .form-wrapper input {
+        @include form-input-text;
+        padding-left: 15px;
+      }
+
+      .form-wrapper input::placeholder {
+        @include form-input-text;
+        background-color: transparent;
+        padding: 0;
+      }
+
+      .form-wrapper textarea {
+        @include form-input-text;
+        grid-column: 1/-1;
+        min-height: 155px;
+        padding: 22px 15px;
+
+        @include vp-1023 {
+          padding-top: 30px;
+        }
+
+        @include vp-767 {
+          min-height: 180px;
+          padding-top: 23px;
+          padding-left: 16px;
+        }
+      }
+
+      .form-wrapper textarea::placeholder {
+        @include form-input-text;
+        background-color: transparent;
+        padding: 0;
+      }
+
+      .form-wrapper button {
+        @include form-button;
+        min-width: 265px;
+        min-height: 45px;
+        margin-top: 15px;
+        padding: 15px 25px;
+        padding-bottom: 10px;
+        justify-self: start;
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+        @include form-button-hover;
+
+        @include vp-767 {
+          min-width: 270px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          grid-row: 4/5;
+        }
+      }
+
+      .form-wrapper label {
+        @include form-label;
+        margin-left: 10px;
+        margin-top: 28px;
+        grid-column: 2/3;
+
+        @include vp-1023 {
+          margin-left: 0;
+          margin-top: 19px;
+        }
+
+        @include vp-767 {
+          margin-top: 0;
+          margin-left: 5px;
+          grid-column: 1/-1;
+        }
+      }
+
+      .form-wrapper input[type="checkbox"] + span {
+        @include checkbox;
+      }
+
+      .form-wrapper input[type="checkbox"]:checked + span::before {
+        @include checkbox-checked;
+      }
+
+      .form-wrapper {
+        @include checkbox-hover;
+      }
       left: 6px;
     }
   }
