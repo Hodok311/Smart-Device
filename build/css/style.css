@@ -2320,7 +2320,7 @@ button,
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 5%;
   text-transform: uppercase;
 }
 @media (max-width: 1023px) {
@@ -2331,7 +2331,7 @@ button,
     text-transform: uppercase;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-section__link-text {
     display: none;
   }
@@ -2343,11 +2343,11 @@ button,
   font-size: 14px;
   text-align: center;
   line-height: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: 5%;
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .main-section__link-mobile {
     display: none;
   }
