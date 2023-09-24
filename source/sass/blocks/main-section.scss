@@ -113,8 +113,6 @@
     padding: 8px 30px;
     width: 100%;
     margin-left: 0;
-
-
   }
 
   &:hover,
@@ -138,7 +136,7 @@
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   @media (max-width: 1023px) {
@@ -148,9 +146,8 @@
     text-transform: uppercase;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: none;
-
   }
 }
 
@@ -160,11 +157,11 @@
   font-size: 14px;
   text-align: center;
   line-height: 16px;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .main-section__link-mobile {
     display: none;
   }

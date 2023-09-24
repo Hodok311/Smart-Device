@@ -10,7 +10,7 @@
 
     if (isOpened) {
       textBlock.classList.remove('active');
-      textBlock.style.maxHeight = `${190}px`;
+      textBlock.style.maxHeight = `${initialHeight}px`;
       button.textContent = 'Подробнее';
     } else {
       textBlock.classList.add('active');
