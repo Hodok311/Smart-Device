@@ -1461,9 +1461,9 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1529,7 +1529,15 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__list-item--contacts {
-    padding: 0;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0;
   }
 }
 
@@ -1554,7 +1562,7 @@ button,
 @media (min-width: 1023px) {
   .main-header__list-item--button {
     padding: 10px 0;
-    width: auto;
+    width: 160px;
   }
 }
 @media (max-width: 1023px) {
@@ -1688,6 +1696,8 @@ button,
   .logo {
     padding: 0;
     margin-right: auto;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -2624,7 +2634,8 @@ button,
   color: #041827;
   text-align: left;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
+  margin-top: 19px;
 }
 @media (max-width: 1023px) {
   .about__textblock p {
@@ -2635,7 +2646,7 @@ button,
   .about__textblock p {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }
 
@@ -2727,14 +2738,15 @@ button,
 }
 
 .about__textblock {
-  max-height: 167px;
-  overflow: hidden;
+  max-height: 267px;
+  overflow: auto;
+  text-overflow: ellipsis;
   -webkit-transition: max-height 0.26s ease-in;
   transition: max-height 0.26s ease-in;
 }
 @media (max-width: 1023px) {
   .about__textblock {
-    max-height: 255px;
+    max-height: 320px;
   }
 }
 @media (max-width: 767px) {

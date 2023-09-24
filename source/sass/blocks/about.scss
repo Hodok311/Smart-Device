@@ -50,7 +50,8 @@
   color: $color-black-pearl;
   text-align: left;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
+  margin-top: 19px;
 
   @media (max-width: 1023px) {
     margin-bottom: 18px;
@@ -60,7 +61,7 @@
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 19px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
   }
 }
@@ -103,6 +104,7 @@
     justify-content: center;
     padding: 8px 40px;
     width: 60%;
+    // margin-top: 16px;
   }
 
   &:hover,
@@ -148,12 +150,13 @@
 }
 
 .about__textblock {
-  max-height: 167px;
-  overflow: hidden;
+  max-height: 267px;
+  overflow: auto;
+  text-overflow: ellipsis;
   transition: max-height 0.26s ease-in;
 
   @media (max-width: 1023px) {
-    max-height: 255px;
+    max-height: 320px;
   }
 
   @media (max-width: 767px) {

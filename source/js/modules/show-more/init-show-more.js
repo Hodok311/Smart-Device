@@ -10,11 +10,11 @@
 
     if (isOpened) {
       textBlock.classList.remove('active');
-      textBlock.style.maxHeight = `${initialHeight}px`;
+      textBlock.style.maxHeight = `${190}px`;
       button.textContent = 'Подробнее';
     } else {
       textBlock.classList.add('active');
-      textBlock.style.maxHeight = `${maxHeight}px`;
+      textBlock.style.maxHeight = `${510}px`;
       button.textContent = 'Свернуть';
     }
   };
