@@ -14,7 +14,7 @@
       button.textContent = 'Подробнее';
     } else {
       textBlock.classList.add('active');
-      textBlock.style.maxHeight = `${510}px`;
+      textBlock.style.maxHeight = `${maxHeight}px`;
       button.textContent = 'Свернуть';
     }
   };

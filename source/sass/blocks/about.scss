@@ -46,7 +46,7 @@
   font-family: $ff-pt-mono;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21px;
   color: $color-black-pearl;
   text-align: left;
   margin: 0;
@@ -58,7 +58,7 @@
 
   @media (max-width: 767px) {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18px;
     margin-bottom: 16px;
   }
 }
@@ -100,7 +100,8 @@
   @media (max-width: 767px) {
     justify-content: center;
     padding: 8px 40px;
-    width: 60%;
+    width: 100%;
+    margin-top: 10px;
   }
 
   &:hover,
@@ -151,11 +152,11 @@
   transition: max-height 0.26s ease-in;
 
   @media (max-width: 1023px) {
-    max-height: 255px;
+    max-height: 200px;
   }
 
   @media (max-width: 767px) {
-    max-height: 220px;
+    max-height: 200px;
     min-width: 270px;
     padding: 0;
   }

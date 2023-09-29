@@ -785,6 +785,7 @@ button,
   -webkit-box-shadow: inset 0 0 0 1px #ffffff;
           box-shadow: inset 0 0 0 1px #ffffff;
   border-radius: 2px;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .modal__form .modal__checkbox-mark::before {
@@ -897,8 +898,7 @@ button,
   pointer-events: auto;
 }
 
-.custom-input,
-.custom-textarea {
+.custom-input {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -907,14 +907,12 @@ button,
   padding: 14px 0 28px;
 }
 @media screen and (max-width: 767px) {
-  .custom-input,
-.custom-textarea {
+  .custom-input {
     padding: 4px 0 48px;
     width: 100%;
   }
 }
-.custom-input label,
-.custom-textarea label {
+.custom-input label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -924,8 +922,7 @@ button,
   width: 100%;
 }
 @media screen and (max-width: 767px) {
-  .custom-input label,
-.custom-textarea label {
+  .custom-input label {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -936,9 +933,7 @@ button,
   }
 }
 .custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
+.custom-input label textarea {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -956,33 +951,25 @@ button,
 }
 @media screen and (max-width: 767px) {
   .custom-input label input,
-.custom-input label textarea,
-.custom-textarea label input,
-.custom-textarea label textarea {
+.custom-input label textarea {
     max-width: unset;
     width: 100%;
   }
 }
 .custom-input label input:hover,
-.custom-input label textarea:hover,
-.custom-textarea label input:hover,
-.custom-textarea label textarea:hover {
+.custom-input label textarea:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
 .custom-input label input:focus,
-.custom-input label textarea:focus,
-.custom-textarea label input:focus,
-.custom-textarea label textarea:focus {
+.custom-input label textarea:focus {
   border: 2px solid rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 767px) {
-  .custom-input__label,
-.custom-textarea__label {
+  .custom-input__label {
     margin: 0 0 18px 0;
   }
 }
-.custom-input__error,
-.custom-textarea__error {
+.custom-input__error {
   position: absolute;
   right: 0;
   bottom: 35px;
@@ -992,47 +979,34 @@ button,
   transition: opacity 0.3s ease;
 }
 @media screen and (max-width: 767px) {
-  .custom-input__error,
-.custom-textarea__error {
+  .custom-input__error {
     bottom: 20px;
   }
 }
 .custom-input.is-invalid input,
-.custom-input.is-invalid textarea,
-.custom-textarea.is-invalid input,
-.custom-textarea.is-invalid textarea {
+.custom-input.is-invalid textarea {
   border: 2px solid #ff1553;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
-.custom-input.is-invalid textarea:hover,
-.custom-textarea.is-invalid input:focus,
-.custom-textarea.is-invalid input:hover,
-.custom-textarea.is-invalid textarea:focus,
-.custom-textarea.is-invalid textarea:hover {
+.custom-input.is-invalid textarea:hover {
   border: 2px solid rgba(255, 21, 83, 0.5);
 }
-.custom-input.is-valid input,
-.custom-textarea.is-valid input {
+.custom-input.is-valid input {
   border: 2px solid #22b259;
 }
-.custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
-.custom-textarea.is-valid input:focus,
-.custom-textarea.is-valid input:hover {
+.custom-input.is-valid input:focus, .custom-input.is-valid input:hover {
   border: 2px solid rgba(34, 178, 89, 0.5);
 }
-.custom-input .input-message,
-.custom-textarea .input-message {
+.custom-input .input-message {
   position: absolute;
   right: 0;
   bottom: -5px;
 }
-.custom-input .input-message.is-invalid,
-.custom-textarea .input-message.is-invalid {
+.custom-input .input-message.is-invalid {
   color: #ff0000;
 }
-.custom-input .input-message.is-valid,
-.custom-textarea .input-message.is-valid {
+.custom-input .input-message.is-valid {
   color: #15ab07;
 }
 
@@ -1487,9 +1461,9 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1510,7 +1484,7 @@ button,
   }
 }
 
-.main-header__contacts-list {
+.contacts-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1527,9 +1501,9 @@ button,
           column-gap: 98px;
 }
 @media (max-width: 1023px) {
-  .main-header__contacts-list {
+  .contacts-list {
     min-width: 100px;
-    gap: 20px;
+    gap: 30px;
     margin-right: 20px;
   }
 }
@@ -1555,7 +1529,15 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__list-item--contacts {
-    padding: 0;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 0;
   }
 }
 
@@ -1580,7 +1562,7 @@ button,
 @media (min-width: 1023px) {
   .main-header__list-item--button {
     padding: 10px 0;
-    width: auto;
+    width: 160px;
   }
 }
 @media (max-width: 1023px) {
@@ -1714,6 +1696,8 @@ button,
   .logo {
     padding: 0;
     margin-right: auto;
+    width: 35px;
+    height: 35px;
   }
 }
 
@@ -2346,7 +2330,7 @@ button,
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 5%;
   text-transform: uppercase;
 }
 @media (max-width: 1023px) {
@@ -2357,7 +2341,7 @@ button,
     text-transform: uppercase;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-section__link-text {
     display: none;
   }
@@ -2369,11 +2353,11 @@ button,
   font-size: 14px;
   text-align: center;
   line-height: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: 5%;
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .main-section__link-mobile {
     display: none;
   }
@@ -2646,7 +2630,7 @@ button,
   font-family: "PT Mono", "Courier New", monospace;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 21px;
   color: #041827;
   text-align: left;
   margin: 0;
@@ -2660,7 +2644,7 @@ button,
 @media (max-width: 767px) {
   .about__textblock p {
     font-size: 14px;
-    line-height: 19px;
+    line-height: 18px;
     margin-bottom: 16px;
   }
 }
@@ -2707,7 +2691,8 @@ button,
         -ms-flex-pack: center;
             justify-content: center;
     padding: 8px 40px;
-    width: 60%;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 .about__button:hover, .about__button:focus-visible {
@@ -2760,12 +2745,12 @@ button,
 }
 @media (max-width: 1023px) {
   .about__textblock {
-    max-height: 255px;
+    max-height: 200px;
   }
 }
 @media (max-width: 767px) {
   .about__textblock {
-    max-height: 220px;
+    max-height: 200px;
     min-width: 270px;
     padding: 0;
   }
