@@ -1,0 +1,122 @@
+.promo-section {
+  position: relative;
+  background-color: $color-default-black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 880px;
+  padding-top: 10px;
+  color: $color-alice-blue;
+
+  @media (max-width: 1023px) {
+    min-height: 640px;
+    background-position: -125px;
+  }
+
+  @media (max-width: 767px) {
+    min-height: 560px;
+    background-position: -230px;
+  }
+}
+
+.promo {
+  margin-left: 125px;
+  padding-top: 294px;
+
+  @media (max-width: 1023px) {
+    margin-left: 25px;
+    padding-top: 170px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 9px;
+    padding-top: 140px;
+  }
+}
+
+.promo h1 {
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: 0.07em;
+  line-height: 94px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+
+  @media (max-width: 1023px) {
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: -2px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 8px;
+  }
+}
+
+.promo p {
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 47px;
+  max-width: 670px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 59px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 44px;
+  }
+}
+
+.promo__button {
+  font-size: 18px;
+  line-height: 21px;
+  min-width: 410px;
+  color: $color-alice-blue;
+  padding: 16px 24px;
+  background-color: $color-deep-sky-blue;
+  cursor: pointer;
+  margin-bottom: 280px;
+
+  @media (max-width: 1023px) {
+    margin-left: 46px;
+    padding: 14px 24px 17px;
+    margin-bottom: 205px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 270px;
+    padding: 12px 30px;
+    margin-left: 0;
+    margin-bottom: 190px;
+  }
+}
+
+.promo__text-desktop {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.promo__text-mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

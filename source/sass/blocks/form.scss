@@ -1,207 +1,361 @@
-.form {
-  z-index: 11;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 30px;
+.questions {
+  background-image: linear-gradient(139deg, #2b648f 0%, #2b648f 33.5%, #2b648f 33.5%, #00b3ff 33.5%, #00b3ff 100%);
+
+  @media (max-width: 1023px) {
+    background-image: unset;
+    background-color: #00b3ff;
+  }
+}
+
+.questions-wrapper {
+  position: relative;
+  padding-top: 166px;
+  padding-bottom: 250px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1023px) {
+    padding-top: 46px;
+    padding-bottom: 126px;
+    margin-left: 13px;
+    justify-content: center;
+  }
 
   @media (max-width: 767px) {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
+    padding-bottom: 88px;
+    margin-left: 10px;
+  }
+}
+
+.questions__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 10px 0 0;
+
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.questions__form-wrapper {
+  max-width: 580px;
+  margin-right: 10px;
+
+  @media (max-width: 1023px) {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 11px 0 14px;
+    margin-right: 15px;
   }
 
-  input[type="text"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 14px;
-    margin: 0;
-    border: none;
-    border-radius: 3px;
-    background-color: $color-black-pearl-second-opacity;
-    font-family: $ff-pt-mono;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: transparent;
-    text-shadow: 0 0 0 $color-alice-blue;
+  @media (max-width: 767px) {
+    padding: 0 8px 0 1px;
+    margin-right: 4px;
+  }
+}
 
-    &:hover,
-    &:focus {
-      opacity: 0.7;
-    }
+.questions__form-wrapper h2 {
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  min-width: 580px;
+  margin-left: -5px;
 
-    &:focus-visible {
-      outline: 1px solid $color-alice-blue;
-      border-radius: 3px;
-    }
-
-    &::placeholder {
-      color: $color-default-white;
-    }
-
-    @media (max-width: 767px) {
-      padding-bottom: 14px;
-    }
+  @media (max-width: 1023px) {
+    padding-bottom: 5px;
+    margin-left: 0;
   }
 
-  input[type="text"] {
-    padding-top: 14px;
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 3px;
+    min-width: 271px;
+  }
+}
+
+.questions__form-wrapper p {
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 26px;
   }
 
-
-  input[type="tel"] {
-    padding-top: 14px;
-  }
-
-
-  .form__textarea {
-    grid-column: 1 / -1;
-  }
-
-  label {
-    width: 100%;
-  }
-
-  textarea {
-    width: 100%;
-    padding-top: 24px;
-    height: 155px;
-
-    @media (max-width: 1023px) {
-      padding-top: 30px;
-    }
-
-    @media (max-width: 767px) {
-      padding-top: 22px;
-      min-height: 180px;
-    }
-  }
-
-
-  .form__button-wrapper {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 8px;
-    gap: 50px;
-
-    @media (max-width: 1023px) {
-      gap: 30px;
-    }
-
-    @media (max-width: 767px) {
-      grid-column: 1 / -1;
-      grid-template-columns: 1fr;
-      padding-top: 3px;
-      gap: 24px;
-    }
-  }
-
-  button {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    padding: 14px 6px;
-    background-color: $color-black-pearl;
-    color: $color-default-white;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    justify-content: center;
-    border: none;
-
-    &:hover,
-    &:focus {
-      opacity: 0.7;
-    }
-
-    &:focus-visible {
-      outline: 1px solid $color-alice-blue;
-      border-radius: 3px;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-
-    @media (max-width: 1023px) {
-      padding: 14px 15px 12px;
-      max-width: 265px;
-    }
-
-    @media (max-width: 767px) {
-      max-width: 100%;
-    }
-  }
-
-  .form__agreement {
-    grid-column: 2 / 3;
-    grid-row: 1;
-    align-self: self-end;
-    font-family: $ff-pt-mono;
-    font-weight: 400;
+  @media (max-width: 767px) {
     font-size: 14px;
-    line-height: 16px;
-    color: $color-default-white;
-    opacity: 0.8;
-    padding-left: 26px;
-    position: relative;
-    cursor: pointer;
+    line-height: 19px;
+    margin-bottom: 33px;
+    max-width: 210px;
+  }
+}
 
-    @media (max-width: 1023px) {
-      align-self: center;
-      width: 230px;
-      // width: 100%;
-    }
+//стилизация формы
 
-    @media (max-width: 767px) {
-      padding-left: 30px;
-      grid-column: 1 / -1;
-      grid-row: 2;
-    }
+.questions-form__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.questions-form__name {
+  margin-right: 30px;
+  flex: 1 1 auto;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    width: 50%;
   }
 
-  input[type="checkbox"] {
-    appearance: none;
-    grid-area: checkbox;
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 17px;
+    width: 100%;
+  }
+}
 
-    &:checked + .form__checkbox-mark::before {
-      background-image: url("../img/svg/checkbox-mark.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+.questions-form__phone {
+  flex: 1 1 auto;
 
-    &:hover + .form__checkbox-mark::before,
-    &:focus + .form__checkbox-mark::before,
-    &:focus-visible + .form__checkbox-mark::before {
-      box-shadow: inset 0 0 0 1px $color-black-pearl;
-    }
+  @media (max-width: 1023px) {
+    display: flex;
+    width: 50%;
   }
 
-  .form__checkbox-mark::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 10px;
-    width: 15px;
-    height: 15px;
-    box-shadow: inset 0 0 0 1px $color-default-white;
-    border-radius: 2px;
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
 
-    @media (max-width: 767px) {
-      top: 8px;
-      left: 6px;
-    }
+.questions-form__name label,
+.questions-form__phone label,
+.questions-form__textarea label {
+  display: none;
+}
+
+.questions-form__name input,
+.questions-form__phone input {
+  width: 100%;
+}
+
+.questions-form__name input,
+.questions-form__phone input,
+.questions-form__textarea textarea {
+  border: none;
+  outline: none;
+  background-color: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  padding: 15px;
+
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $color-alice-blue;
+}
+
+.questions-form__name input:hover,
+.questions-form__phone input:hover,
+.questions-form__textarea textarea:hover,
+.questions-form__name input:focus,
+.questions-form__phone input:focus,
+.questions-form__textarea textarea:focus {
+  background-color: rgba(4, 20, 39, 0.3);
+}
+
+.questions-form__name input::-webkit-input-placeholder,
+.questions-form__phone input::-webkit-input-placeholder,
+.questions-form__textarea textarea::-webkit-input-placeholder {
+  color: $color-default-white;
+}
+
+.questions-form__textarea {
+  margin-bottom: 26px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 0;
+  }
+}
+
+.questions-form__textarea textarea {
+  padding-top: 25px;
+  width: 100%;
+  min-height: 155px;
+
+  @media (max-width: 1023px) {
+    padding-top: 29px;
+    margin-bottom: 26px;
   }
 
-  .input-message {
-    font-family: inherit;
-    color: $color-black-pearl;
+  @media (max-width: 767px) {
+    padding-top: 23px;
+    margin-bottom: 24px;
+    min-height: 179px;
   }
+}
+
+//стилизация кнопки и чекбокса
+
+.questions-form__submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: 1023px) {
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.questions-form__button {
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.questions-form__button input {
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+
+  font-family: $ff-heading-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px 11px;
+  background-color: #041427;
+  color: $color-default-white;
+  min-width: 265px;
+  margin-right: 50px;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 1023px) {
+    margin-right: 85px;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-bottom: 24px;
+    width: 100%;
+    padding-top: 16px;
+  }
+}
+
+.questions-form__checkbox input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.questions-form__checkbox label {
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  opacity: 0.8;
+  cursor: pointer;
+  position: relative;
+}
+
+.questions-form__checkbox span::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid $color-default-white;
+
+  @media (max-width: 767px) {
+    top: 7px;
+    left: -28px;
+  }
+}
+
+.questions-form__checkbox span {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+
+  @media (max-width: 1023px) {
+    max-width: 260px;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 235px;
+    padding-left: 0;
+  }
+}
+
+.questions-form__checkbox:hover span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
+}
+
+.questions-form__checkbox label input[type="checkbox"]:focus + span::before {
+  background-color: rgba(4, 20, 39, 0.3);
+  border: 1px solid rgba(4, 20, 39, 0.3);
+}
+
+.questions-form__checkbox span::after {
+  content: " ";
+  position: absolute;
+  top: 7px;
+  left: 3px;
+  transform: translateY(80%);
+  display: none;
+  width: 8px;
+  height: 6px;
+  background-image: url("../img/svg/icon-checked.svg");
+  background-repeat: no-repeat;
+
+  @media (max-width: 767px) {
+    top: 7px;
+    left: -25px;
+  }
+}
+
+.questions-form__checkbox label input[type="checkbox"]:checked + span::after {
+  display: block;
 }

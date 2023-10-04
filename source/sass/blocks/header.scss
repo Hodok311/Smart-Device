@@ -1,154 +1,151 @@
 .header {
-  position: fixed;
-  background: linear-gradient(180deg, #041827 84.9%, #04182700 100%);
   width: 100%;
-  padding: 0 40px;
-  z-index: 1;
+  position: fixed;
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 9999;
 
-  @media (max-width: $vp-1024) {
-    position: relative;
-    padding: 0 50px;
-  }
-
-  @media (max-width: $vp-768) {
-    padding: 0 25px;
+  @include vp-1023 {
+    position: absolute;
   }
 }
 
-.header__list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  align-items: start;
+.header-container {
+  padding: 30px 42px 35px 55px;
+  display: flex;
   justify-content: space-between;
-  padding: 30px 0 35px 0;
-  max-width: 1220px;
+  max-width: 1330px;
   margin: 0 auto;
+  width: 100%;
+  align-items: start;
 
-  @media (max-width: $vp-1024) {
-    grid-template-columns: repeat(2, minmax(auto, 300px));
-    padding: 20px 0 25px 0;
+  @include vp-1023 {
+    padding: 20px 24px 15px 49px;
   }
 
-  @media (max-width: $vp-768) {
-    grid-template-columns: repeat(2, minmax(auto, 170px));
-    padding-top: 15px;
-  }
-}
-
-.header__item {
-  display: grid;
-  grid-template-columns: auto;
-  grid-row-gap: 10px;
-
-  @media (max-width: $vp-1024) {
-    margin: 0;
+  @include vp-767 {
+    padding: 5px 26px 20px;
+    justify-content: unset;
   }
 }
 
-.header__logo {
-  display: block;
+//стилизация логотипа и слогана
+.logo {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-}
-
-.header__item--grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 20px 104px;
-
-  @media (max-width: 1120px) {
-    gap: 20px 60px;
-  }
-
-  @media (max-width: $vp-1024) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    gap: 30px;
-    margin-right: 24px;
-    margin-bottom: 10px;
-  }
-
-  @media (max-width: $vp-768) {
-    justify-content: end;
-    margin-right: 15px;
-    max-width: 160px;
+  @media (max-width: 767px) {
+    width: unset;
+    margin-right: auto;
   }
 }
 
-.header__item-hidden {
-  @media (max-width: $vp-1024) {
+.logo__full {
+  flex: 0 0 auto;
+
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
-.header__link {
-  padding: 5px;
+.logo__shot {
+  flex: 0 0 auto;
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+// стилизация контактов
+.header-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 512px;
+  justify-content: space-between;
+  margin-top: 13px;
+
+  @media (max-width: 1023px) {
+    margin-top: 9px;
+    margin-right: 17px;
+    justify-content: flex-start;
+    width: unset;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+    margin-top: 14px;
+  }
+}
+
+.header-contacts__item {
+  padding: 10px;
+  padding-top: 0;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.header-contacts__item + .header-contacts__item {
+  margin-right: 30px;
+
+  @media (max-width: 1023px) {
+    margin-left: 18px;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 39px;
+    margin-right: 20px;
+  }
+}
+
+.header-contacts__link {
+  max-width: 225px;
   display: flex;
   align-items: center;
-  margin-top: 5px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
-  @media (max-width: $vp-768) {
-    margin: 0;
-  }
 }
 
-.header__link-icon {
+.header-contacts__icon {
   margin-right: 15px;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: 1023px) {
     margin: 0;
   }
 }
 
-.header__link-text {
-  color: #f2f5f7;
+.header-contacts__description {
+  color: $color-alice-blue;
+
+  font-family: $ff-content-font;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: 1023px) {
     display: none;
   }
 }
 
-.header__button {
-  @include fonts(14px, 16px);
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.05em;
-  border: 1px solid #f2f5f7;
-  border-radius: 3px;
-  color: #f2f5f7;
-  background: transparent;
-  justify-self: end;
-  margin-right: 63px;
+// силизация кнопок
+.header-button {
+  font-size: 14px;
+  line-height: 16px;
+  min-width: 160px;
+  color: $color-alice-blue;
+  padding: 11px 15px;
   margin-top: 5px;
-  text-transform: uppercase;
-  width: 160px;
-  min-height: 40px;
-  align-self: center;
-  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid $color-alice-blue;
+  margin-right: 72px;
 
-  &:hover {
-    background: #091a3d;
-  }
-
-  &:active {
-    border: none;
+  @media (max-width: 1023px) {
+    display: none;
   }
 }
